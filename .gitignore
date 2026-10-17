@@ -1,0 +1,12 @@
+# Build artifacts
+*.o
+*.obj
+*.exe
+*.out
+
+# Local editor settings
+.vscode/
+
+# Windows
+Thumbs.db
+Desktop.ini
