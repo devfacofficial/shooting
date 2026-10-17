@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['putchar_0',['PutChar',['../main_8c.html#a2f8299491628acbd0062c38b2f734a07',1,'main.c']]]
+  ['main_0',['main',['../main_8c.html#a840291bc02cba5474a4cb46a9b9566fe',1,'main.c']]]
 ];

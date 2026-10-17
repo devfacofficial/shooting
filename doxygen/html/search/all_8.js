@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['putchar_0',['PutChar',['../main_8c.html#a2f8299491628acbd0062c38b2f734a07',1,'main.c']]]
+  ['n_20g_0',['s h o o t i n g',['../md__r_e_a_d_m_e.html#autotoc_md3',1,'']]]
 ];

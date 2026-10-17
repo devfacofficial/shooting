@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['anglearray_0',['AngleArray',['../main_8c.html#a1e95e216c82ae1d05b2ff0a8761b6be8',1,'main.c']]]
+  ['angle_0',['angle',['../struct_bom.html#af1223e36eea6119394041156bd221e73',1,'Bom']]]
 ];

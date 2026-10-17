@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.18.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Draw Particles: E:/Develop/C/shooting_1st/main.c File Reference</title>
+<title>Draw Particles: main.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="codefolding.js"></script>
@@ -110,124 +110,188 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('main_8c.html',
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">E:/Develop/C/shooting_1st/main.c File Reference</div></div>
+  <div class="headertitle"><div class="title">main.c File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
-<code>#include &lt;stdbool.h&gt;</code><br />
 <code>#include &lt;windows.h&gt;</code><br />
 <code>#include &lt;math.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="_bom_array_8h_source.html">BomArray.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_draw_object_8h_source.html">DrawObject.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for main.c:</div>
 <div class="dyncontent">
-<div class="center"><img src="main_8c__incl.png" border="0" usemap="#a_e_1_2_develop_2_c_2shooting__1st_2main_8c" loading="lazy" alt=""/></div>
-<map name="a_e_1_2_develop_2_c_2shooting__1st_2main_8c" id="a_e_1_2_develop_2_c_2shooting__1st_2main_8c">
-<area shape="rect" title=" " alt="" coords="180,5,333,48"/>
-<area shape="rect" title=" " alt="" coords="5,96,70,123"/>
-<area shape="poly" title=" " alt="" coords="201,51,85,93,83,88,199,46"/>
-<area shape="rect" title=" " alt="" coords="94,96,154,123"/>
-<area shape="poly" title=" " alt="" coords="225,48,159,90,156,85,220,49"/>
-<area shape="rect" title=" " alt="" coords="178,96,241,123"/>
-<area shape="poly" title=" " alt="" coords="246,47,226,84,223,80,242,50"/>
-<area shape="rect" title=" " alt="" coords="266,96,340,123"/>
-<area shape="poly" title=" " alt="" coords="269,46,290,83,285,82,267,51"/>
-<area shape="rect" title=" " alt="" coords="364,96,447,123"/>
-<area shape="poly" title=" " alt="" coords="295,46,372,88,366,88,294,51"/>
-<area shape="rect" title=" " alt="" coords="471,96,532,123"/>
-<area shape="poly" title=" " alt="" coords="320,46,459,93,454,94,319,51"/>
+<div class="center"><img src="main_8c__incl.png" border="0" usemap="#amain_8c" loading="lazy" alt=""/></div>
+<map name="amain_8c" id="amain_8c">
+<area shape="rect" title=" " alt="" coords="213,5,274,32"/>
+<area shape="rect" title=" " alt="" coords="211,155,276,181"/>
+<area shape="poly" title=" " alt="" coords="211,26,103,45,49,61,30,71,18,82,8,102,14,118,31,131,58,142,127,156,198,165,193,166,126,161,56,147,28,136,9,121,3,102,13,78,27,67,47,57,101,40,214,21"/>
+<area shape="rect" title=" " alt="" coords="28,80,88,107"/>
+<area shape="poly" title=" " alt="" coords="212,34,104,77,102,72,214,30"/>
+<area shape="rect" title=" " alt="" coords="112,80,175,107"/>
+<area shape="poly" title=" " alt="" coords="228,31,175,73,172,68,224,34"/>
+<area shape="rect" title=" " alt="" coords="495,155,578,181"/>
+<area shape="poly" title=" " alt="" coords="274,20,404,39,470,56,495,66,513,78,524,91,531,107,538,140,534,138,526,109,519,94,510,82,493,71,468,61,403,45,274,26"/>
+<area shape="rect" title=" " alt="" coords="313,80,374,107"/>
+<area shape="poly" title=" " alt="" coords="261,30,316,70,311,71,260,35"/>
+<area shape="rect" href="_bom_array_8h.html" title=" " alt="" coords="199,80,288,107"/>
+<area shape="poly" title=" " alt="" coords="245,30,246,66,241,63,242,35"/>
+<area shape="rect" href="_draw_object_8h.html" title=" " alt="" coords="398,80,499,107"/>
+<area shape="poly" title=" " alt="" coords="274,28,401,74,396,75,274,33"/>
+<area shape="poly" title=" " alt="" coords="245,105,246,140,241,138,242,109"/>
+<area shape="poly" title=" " alt="" coords="416,107,291,153,289,148,410,108"/>
+<area shape="poly" title=" " alt="" coords="465,105,513,145,507,144,463,110"/>
+<area shape="rect" title=" " alt="" coords="397,155,471,181"/>
+<area shape="poly" title=" " alt="" coords="448,105,442,141,438,138,444,109"/>
 </map>
 </div>
 </div>
 <p><a href="main_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a587ef3d5591c12807a8da97d4fecf34e" id="r_a587ef3d5591c12807a8da97d4fecf34e"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a587ef3d5591c12807a8da97d4fecf34e">MSG_INITIALIZE_FAILED</a>&#160;&#160;&#160;&quot;Failed to initialize console drawing.\n&quot;</td></tr>
+<tr class="memitem:a0adc7f6c56e2eb1e23fa35a1ddb9bbc3" id="r_a0adc7f6c56e2eb1e23fa35a1ddb9bbc3"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a0adc7f6c56e2eb1e23fa35a1ddb9bbc3">MSG_ALLOCATE_FAILED</a>&#160;&#160;&#160;&quot;Failed to allocate particle array.\n&quot;</td></tr>
+<tr class="memitem:ac23d2f67719bd9d5be1977f2e0879928" id="r_ac23d2f67719bd9d5be1977f2e0879928"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ac23d2f67719bd9d5be1977f2e0879928">MSG_DIMENSION_FAILED</a>&#160;&#160;&#160;&quot;Failed to get console dimensions.\n&quot;</td></tr>
+<tr class="memitem:aeb2a55863ba6aef0072cb8285f72301d" id="r_aeb2a55863ba6aef0072cb8285f72301d"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aeb2a55863ba6aef0072cb8285f72301d">MSG_DRAW_FAILED</a>&#160;&#160;&#160;&quot;Failed to draw boms.\n&quot;</td></tr>
+<tr class="memitem:abc5941e288f61de20e255c595a29729c" id="r_abc5941e288f61de20e255c595a29729c"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#abc5941e288f61de20e255c595a29729c">MSG_CLEAR_FAILED</a>&#160;&#160;&#160;&quot;Failed to clear boms.\n&quot;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a840291bc02cba5474a4cb46a9b9566fe" id="r_a840291bc02cba5474a4cb46a9b9566fe"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a840291bc02cba5474a4cb46a9b9566fe">main</a> (void)</td></tr>
 <tr class="memdesc:a840291bc02cba5474a4cb46a9b9566fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">メイン  <br /></td></tr>
-<tr class="memitem:aeab40aa752126f3afe8cd1191ac41443" id="r_aeab40aa752126f3afe8cd1191ac41443"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aeab40aa752126f3afe8cd1191ac41443">DrawBoms</a> (uint8_t ch, double xArray[], double yArray[], uint32_t count)</td></tr>
-<tr class="memdesc:aeab40aa752126f3afe8cd1191ac41443"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bom配列の全要素を描画または消去する  <br /></td></tr>
-<tr class="memitem:a2f8299491628acbd0062c38b2f734a07" id="r_a2f8299491628acbd0062c38b2f734a07"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a2f8299491628acbd0062c38b2f734a07">PutChar</a> (int32_t x, int32_t y, uint8_t ch)</td></tr>
-<tr class="memdesc:a2f8299491628acbd0062c38b2f734a07"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定位置に1文字描画する  <br /></td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a0c7b9412efc63450813a052f1f7d27a1" id="r_a0c7b9412efc63450813a052f1f7d27a1"><td class="memItemLeft">HANDLE&#160;</td><td class="memItemRight"><a class="el" href="#a0c7b9412efc63450813a052f1f7d27a1">Output</a></td></tr>
-<tr class="memdesc:a0c7b9412efc63450813a052f1f7d27a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンソール出力ハンドル  <br /></td></tr>
-<tr class="memitem:aae7b5b15d04550bf51dfcc6a22f88c65" id="r_aae7b5b15d04550bf51dfcc6a22f88c65"><td class="memItemLeft">CONSOLE_SCREEN_BUFFER_INFO&#160;</td><td class="memItemRight"><a class="el" href="#aae7b5b15d04550bf51dfcc6a22f88c65">Info</a></td></tr>
-<tr class="memdesc:aae7b5b15d04550bf51dfcc6a22f88c65"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンソールの表示領域情報  <br /></td></tr>
-<tr class="memitem:a1e95e216c82ae1d05b2ff0a8761b6be8" id="r_a1e95e216c82ae1d05b2ff0a8761b6be8"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a1e95e216c82ae1d05b2ff0a8761b6be8">AngleArray</a> [PARTICLE_COUNT]</td></tr>
-<tr class="memdesc:a1e95e216c82ae1d05b2ff0a8761b6be8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bomの進行方向の角度  <br /></td></tr>
-<tr class="memitem:ae41ea56138e48a96730ffbd829f952c2" id="r_ae41ea56138e48a96730ffbd829f952c2"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#ae41ea56138e48a96730ffbd829f952c2">XArray</a> [PARTICLE_COUNT]</td></tr>
-<tr class="memdesc:ae41ea56138e48a96730ffbd829f952c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">BomのX座標  <br /></td></tr>
-<tr class="memitem:ab67d3c0c9af4393d19ea2259ff87e581" id="r_ab67d3c0c9af4393d19ea2259ff87e581"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#ab67d3c0c9af4393d19ea2259ff87e581">YArray</a> [PARTICLE_COUNT]</td></tr>
-<tr class="memdesc:ab67d3c0c9af4393d19ea2259ff87e581"><td class="mdescLeft">&#160;</td><td class="mdescRight">BomのY座標  <br /></td></tr>
-<tr class="memitem:a3ea2b6c30a629812db554bafe87c1bdb" id="r_a3ea2b6c30a629812db554bafe87c1bdb"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a3ea2b6c30a629812db554bafe87c1bdb">DxArray</a> [PARTICLE_COUNT]</td></tr>
-<tr class="memdesc:a3ea2b6c30a629812db554bafe87c1bdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">BomのX方向の移動量  <br /></td></tr>
-<tr class="memitem:aeb69375368d33ee0d07cc0d1ed235d84" id="r_aeb69375368d33ee0d07cc0d1ed235d84"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#aeb69375368d33ee0d07cc0d1ed235d84">DyArray</a> [PARTICLE_COUNT]</td></tr>
-<tr class="memdesc:aeb69375368d33ee0d07cc0d1ed235d84"><td class="mdescLeft">&#160;</td><td class="mdescRight">BomのY方向の移動量  <br /></td></tr>
+<tr class="memitem:a181bedd8cfd063f83829078de66c1e29" id="r_a181bedd8cfd063f83829078de66c1e29"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a181bedd8cfd063f83829078de66c1e29">DrawBoms</a> (<a class="el" href="struct_draw_object.html">DrawObject</a> *drawObject, const <a class="el" href="struct_bom_array.html">BomArray</a> *bomArray, uint8_t ch)</td></tr>
+<tr class="memdesc:a181bedd8cfd063f83829078de66c1e29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bom配列の全要素を描画または消去する  <br /></td></tr>
 </table>
-<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="aeab40aa752126f3afe8cd1191ac41443" name="aeab40aa752126f3afe8cd1191ac41443"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeab40aa752126f3afe8cd1191ac41443">&#9670;&#160;</a></span>DrawBoms()</h2>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
+<a id="a0adc7f6c56e2eb1e23fa35a1ddb9bbc3" name="a0adc7f6c56e2eb1e23fa35a1ddb9bbc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0adc7f6c56e2eb1e23fa35a1ddb9bbc3">&#9670;&#160;</a></span>MSG_ALLOCATE_FAILED</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void DrawBoms </td>
+          <td class="memname">#define MSG_ALLOCATE_FAILED&#160;&#160;&#160;&quot;Failed to allocate particle array.\n&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00020">20</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a id="abc5941e288f61de20e255c595a29729c" name="abc5941e288f61de20e255c595a29729c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc5941e288f61de20e255c595a29729c">&#9670;&#160;</a></span>MSG_CLEAR_FAILED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MSG_CLEAR_FAILED&#160;&#160;&#160;&quot;Failed to clear boms.\n&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00023">23</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a id="ac23d2f67719bd9d5be1977f2e0879928" name="ac23d2f67719bd9d5be1977f2e0879928"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac23d2f67719bd9d5be1977f2e0879928">&#9670;&#160;</a></span>MSG_DIMENSION_FAILED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MSG_DIMENSION_FAILED&#160;&#160;&#160;&quot;Failed to get console dimensions.\n&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00021">21</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a id="aeb2a55863ba6aef0072cb8285f72301d" name="aeb2a55863ba6aef0072cb8285f72301d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb2a55863ba6aef0072cb8285f72301d">&#9670;&#160;</a></span>MSG_DRAW_FAILED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MSG_DRAW_FAILED&#160;&#160;&#160;&quot;Failed to draw boms.\n&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00022">22</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a id="a587ef3d5591c12807a8da97d4fecf34e" name="a587ef3d5591c12807a8da97d4fecf34e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a587ef3d5591c12807a8da97d4fecf34e">&#9670;&#160;</a></span>MSG_INITIALIZE_FAILED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MSG_INITIALIZE_FAILED&#160;&#160;&#160;&quot;Failed to initialize console drawing.\n&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00019">19</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="a181bedd8cfd063f83829078de66c1e29" name="a181bedd8cfd063f83829078de66c1e29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a181bedd8cfd063f83829078de66c1e29">&#9670;&#160;</a></span>DrawBoms()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DrawBoms </td>
           <td>(</td>
-          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>ch</em></span>, </td>
+          <td class="paramtype"><a class="el" href="struct_draw_object.html">DrawObject</a> *</td>          <td class="paramname"><span class="paramname"><em>drawObject</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>xArray</em></span>[], </td>
+          <td class="paramtype">const <a class="el" href="struct_bom_array.html">BomArray</a> *</td>          <td class="paramname"><span class="paramname"><em>bomArray</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>yArray</em></span>[], </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>count</em></span>&#160;)</td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>ch</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Bom配列の全要素を描画または消去する </p>
-<p>無し </p><dl class="section return"><dt>Returns</dt><dd>無し </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ch</td><td>[I]描画するキャラクタ  </td></tr>
-    <tr><td class="paramname">xArray</td><td>[I]X座標の配列  </td></tr>
-    <tr><td class="paramname">yArray</td><td>[I]Y座標の配列  </td></tr>
-    <tr><td class="paramname">count</td><td>[I]配列数 </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>描画または消去に失敗した場合はfalseを返す </p><dl class="section return"><dt>Returns</dt><dd>成功時true </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00081">81</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00090">90</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="main_8c_aeab40aa752126f3afe8cd1191ac41443_cgraph.png" border="0" usemap="#amain_8c_aeab40aa752126f3afe8cd1191ac41443_cgraph" loading="lazy" alt=""/></div>
-<map name="amain_8c_aeab40aa752126f3afe8cd1191ac41443_cgraph" id="amain_8c_aeab40aa752126f3afe8cd1191ac41443_cgraph">
+<div class="center"><img src="main_8c_a181bedd8cfd063f83829078de66c1e29_cgraph.png" border="0" usemap="#amain_8c_a181bedd8cfd063f83829078de66c1e29_cgraph" loading="lazy" alt=""/></div>
+<map name="amain_8c_a181bedd8cfd063f83829078de66c1e29_cgraph" id="amain_8c_a181bedd8cfd063f83829078de66c1e29_cgraph">
 <area shape="rect" title="Bom配列の全要素を描画または消去する" alt="" coords="5,29,92,56"/>
-<area shape="poly" title=" " alt="" coords="26,29,22,21,25,11,34,5,49,3,64,5,73,14,68,14,62,10,48,8,36,10,29,14,28,20,31,29"/>
-<area shape="rect" href="main_8c.html#a2f8299491628acbd0062c38b2f734a07" title="指定位置に1文字描画する" alt="" coords="140,29,209,56"/>
-<area shape="poly" title=" " alt="" coords="92,40,126,42,121,43,92,45"/>
-<area shape="poly" title=" " alt="" coords="152,28,148,21,151,11,160,5,174,3,190,5,199,15,194,14,188,10,174,8,162,10,155,14,153,20,157,30"/>
+<area shape="poly" title=" " alt="" coords="20,29,15,21,19,11,30,5,49,3,68,5,80,14,75,14,67,10,48,8,32,10,23,15,20,20,25,28"/>
+<area shape="rect" href="_draw_object_8c.html#a97d57e4a4c4b22334107d44537d0f847" title="指定位置に1文字描画する" alt="" coords="140,29,285,56"/>
+<area shape="poly" title=" " alt="" coords="92,40,127,42,121,43,92,45"/>
+<area shape="poly" title=" " alt="" coords="184,28,179,21,182,11,194,5,212,3,232,5,244,14,239,14,230,10,212,8,195,10,186,15,184,20,189,30"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="main_8c_aeab40aa752126f3afe8cd1191ac41443_icgraph.png" border="0" usemap="#amain_8c_aeab40aa752126f3afe8cd1191ac41443_icgraph" loading="lazy" alt=""/></div>
-<map name="amain_8c_aeab40aa752126f3afe8cd1191ac41443_icgraph" id="amain_8c_aeab40aa752126f3afe8cd1191ac41443_icgraph">
+<div class="center"><img src="main_8c_a181bedd8cfd063f83829078de66c1e29_icgraph.png" border="0" usemap="#amain_8c_a181bedd8cfd063f83829078de66c1e29_icgraph" loading="lazy" alt=""/></div>
+<map name="amain_8c_a181bedd8cfd063f83829078de66c1e29_icgraph" id="amain_8c_a181bedd8cfd063f83829078de66c1e29_icgraph">
 <area shape="rect" title="Bom配列の全要素を描画または消去する" alt="" coords="103,29,189,56"/>
 <area shape="poly" title=" " alt="" coords="164,14,158,10,146,8,134,10,128,14,127,20,130,30,125,28,121,20,124,11,132,5,146,3,160,5,169,15"/>
 <area shape="rect" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="メイン" alt="" coords="5,29,55,56"/>
@@ -256,20 +320,41 @@ Here is the caller graph for this function:</div>
 <p>メイン </p>
 <p>コンソールにBomを描画する </p><dl class="section return"><dt>Returns</dt><dd>無し </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00036">36</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00030">30</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph.png" border="0" usemap="#amain_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph" loading="lazy" alt=""/></div>
 <map name="amain_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph" id="amain_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph">
-<area shape="rect" title="メイン" alt="" coords="5,29,55,56"/>
-<area shape="poly" title=" " alt="" coords="9,29,6,20,8,11,16,5,30,3,45,5,53,14,48,15,42,10,30,8,19,10,13,14,11,20,14,28"/>
-<area shape="rect" href="main_8c.html#aeab40aa752126f3afe8cd1191ac41443" title="Bom配列の全要素を描画または消去する" alt="" coords="103,29,189,56"/>
-<area shape="poly" title=" " alt="" coords="55,40,90,42,85,43,55,45"/>
-<area shape="poly" title=" " alt="" coords="125,28,121,20,124,11,132,5,146,3,160,5,169,15,164,14,158,10,146,8,134,10,128,14,127,20,130,30"/>
-<area shape="rect" href="main_8c.html#a2f8299491628acbd0062c38b2f734a07" title="指定位置に1文字描画する" alt="" coords="237,29,306,56"/>
-<area shape="poly" title=" " alt="" coords="189,40,224,43,218,43,190,45"/>
-<area shape="poly" title=" " alt="" coords="249,28,245,21,248,11,257,5,272,3,287,5,296,15,291,13,285,10,272,8,259,10,252,14,251,20,254,30"/>
+<area shape="rect" title="メイン" alt="" coords="9,291,59,317"/>
+<area shape="poly" title=" " alt="" coords="7,291,3,282,6,272,17,266,34,264,52,267,63,274,58,277,50,272,34,269,18,271,10,276,8,281,12,290"/>
+<area shape="rect" href="_bom_array_8c.html#afd6ce4bc9bfb6fd32f9a976d02e40e4f" title="デストラクタ" alt="" coords="123,29,247,56"/>
+<area shape="poly" title=" " alt="" coords="33,290,35,247,45,187,67,123,83,93,105,66,112,62,109,67,109,70,88,96,72,125,50,189,41,248,38,290"/>
+<area shape="rect" href="_bom_array_8c.html#a06e5e313a1427ad58e11d2234d1c2c90" title="初期化" alt="" coords="133,104,237,131"/>
+<area shape="poly" title=" " alt="" coords="35,290,42,259,55,219,75,177,105,141,120,132,117,136,108,145,80,180,60,221,47,260,40,291"/>
+<area shape="rect" href="_bom_array_8c.html#a23cf317218910215769c92133b837ccd" title="コンストラクタ" alt="" coords="129,179,242,205"/>
+<area shape="poly" title=" " alt="" coords="41,289,66,252,84,232,105,215,116,210,113,214,108,220,88,236,71,256,46,291"/>
+<area shape="rect" href="_bom_array_8c.html#ac1d22bd2b971bf8b20b9cd5d0d339af2" title="X/Y更新" alt="" coords="121,253,249,280"/>
+<area shape="poly" title=" " alt="" coords="58,296,115,282,112,286,61,300"/>
+<area shape="rect" href="main_8c.html#a181bedd8cfd063f83829078de66c1e29" title="Bom配列の全要素を描画または消去する" alt="" coords="142,328,228,355"/>
+<area shape="poly" title=" " alt="" coords="58,307,129,325,125,329,60,313"/>
+<area shape="rect" href="_draw_object_8c.html#abfaf87a73b25ec7a353f63801f605e7b" title="描画オブジェクトを解放する" alt="" coords="118,403,253,429"/>
+<area shape="poly" title=" " alt="" coords="49,315,108,365,150,393,145,395,105,369,50,320"/>
+<area shape="rect" href="_draw_object_8c.html#af3fcbdb33b94fc310a2619250f951004" title="表示領域の中心座標を取得する" alt="" coords="107,477,264,504"/>
+<area shape="poly" title=" " alt="" coords="40,315,66,374,85,408,109,439,144,468,139,470,105,443,80,411,61,376,40,321"/>
+<area shape="rect" href="_draw_object_8c.html#afd123f936a1479ff6141796e2e6ba0fb" title="描画オブジェクトを作成する" alt="" coords="123,552,247,579"/>
+<area shape="poly" title=" " alt="" coords="37,315,45,355,57,406,78,462,109,514,123,529,142,544,136,544,120,533,104,518,73,465,52,408,40,356,37,321"/>
+<area shape="poly" title=" " alt="" coords="159,29,154,21,157,11,168,5,185,3,204,5,215,13,209,15,202,10,185,8,170,10,162,14,160,20,164,29"/>
+<area shape="poly" title=" " alt="" coords="159,104,154,95,157,86,168,80,185,77,204,80,215,88,209,90,202,85,185,83,170,85,162,89,160,95,164,103"/>
+<area shape="poly" title=" " alt="" coords="159,178,154,170,157,160,168,154,185,152,204,155,215,163,209,164,202,160,185,157,170,159,162,164,160,169,164,178"/>
+<area shape="poly" title=" " alt="" coords="159,253,154,245,157,235,168,229,185,227,204,229,215,237,209,239,202,234,185,232,170,234,162,238,160,244,164,253"/>
+<area shape="poly" title=" " alt="" coords="159,327,154,319,157,310,168,304,185,301,204,304,215,312,209,313,202,309,185,307,170,309,162,313,160,319,164,328"/>
+<area shape="rect" href="_draw_object_8c.html#a97d57e4a4c4b22334107d44537d0f847" title="指定位置に1文字描画する" alt="" coords="312,328,457,355"/>
+<area shape="poly" title=" " alt="" coords="228,339,299,340,294,343,230,344"/>
+<area shape="poly" title=" " alt="" coords="350,327,345,319,349,310,362,303,385,301,408,304,422,313,417,313,407,309,385,307,364,309,353,313,350,319,356,328"/>
+<area shape="poly" title=" " alt="" coords="159,402,154,394,157,384,168,378,185,376,204,379,215,387,209,388,202,384,185,381,170,383,162,388,160,393,164,402"/>
+<area shape="poly" title=" " alt="" coords="159,476,154,469,157,459,168,453,185,451,204,453,215,462,209,462,202,458,185,456,170,458,162,462,160,468,164,477"/>
+<area shape="poly" title=" " alt="" coords="159,550,154,543,157,534,168,528,185,525,204,528,215,537,209,536,202,533,185,531,170,533,162,537,160,543,164,553"/>
 </map>
 </div>
 <div class="dynheader">
@@ -281,196 +366,6 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="36,14,34,10,30,8,26,9,24,13,25,29,20,29,19,12,23,5,30,3,37,6,41,14"/>
 </map>
 </div>
-
-</div>
-</div>
-<a id="a2f8299491628acbd0062c38b2f734a07" name="a2f8299491628acbd0062c38b2f734a07"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f8299491628acbd0062c38b2f734a07">&#9670;&#160;</a></span>PutChar()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool PutChar </td>
-          <td>(</td>
-          <td class="paramtype">int32_t</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int32_t</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>ch</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>指定位置に1文字描画する </p>
-<p>表示領域外の座標は描画しない </p><dl class="section return"><dt>Returns</dt><dd>成功時true </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>[I]キャラクタを描画するX座標  </td></tr>
-    <tr><td class="paramname">y</td><td>[I]キャラクタを描画するY座標  </td></tr>
-    <tr><td class="paramname">ch</td><td>[I]描画するキャラクタ </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00101">101</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="main_8c_a2f8299491628acbd0062c38b2f734a07_cgraph.png" border="0" usemap="#amain_8c_a2f8299491628acbd0062c38b2f734a07_cgraph" loading="lazy" alt=""/></div>
-<map name="amain_8c_a2f8299491628acbd0062c38b2f734a07_cgraph" id="amain_8c_a2f8299491628acbd0062c38b2f734a07_cgraph">
-<area shape="rect" title="指定位置に1文字描画する" alt="" coords="5,29,75,56"/>
-<area shape="poly" title=" " alt="" coords="26,28,26,12,31,5,40,3,49,5,55,14,49,14,46,10,40,8,34,10,31,14,32,29"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="main_8c_a2f8299491628acbd0062c38b2f734a07_icgraph.png" border="0" usemap="#amain_8c_a2f8299491628acbd0062c38b2f734a07_icgraph" loading="lazy" alt=""/></div>
-<map name="amain_8c_a2f8299491628acbd0062c38b2f734a07_icgraph" id="amain_8c_a2f8299491628acbd0062c38b2f734a07_icgraph">
-<area shape="rect" title="指定位置に1文字描画する" alt="" coords="237,29,306,56"/>
-<area shape="poly" title=" " alt="" coords="291,13,285,10,272,8,259,10,252,14,251,20,254,30,249,28,245,21,248,11,257,5,272,3,287,5,296,15"/>
-<area shape="rect" href="main_8c.html#aeab40aa752126f3afe8cd1191ac41443" title="Bom配列の全要素を描画または消去する" alt="" coords="103,29,189,56"/>
-<area shape="poly" title=" " alt="" coords="219,43,190,45,190,40,224,43"/>
-<area shape="poly" title=" " alt="" coords="164,14,158,10,146,8,134,10,128,14,127,20,130,30,125,28,121,20,124,11,132,5,146,3,160,5,169,15"/>
-<area shape="rect" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="メイン" alt="" coords="5,29,55,56"/>
-<area shape="poly" title=" " alt="" coords="85,44,55,45,55,40,90,42"/>
-<area shape="poly" title=" " alt="" coords="48,15,42,10,30,8,19,10,13,14,11,20,14,28,9,29,6,20,8,11,16,5,30,3,45,5,53,14"/>
-</map>
-</div>
-
-</div>
-</div>
-<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
-<a id="a1e95e216c82ae1d05b2ff0a8761b6be8" name="a1e95e216c82ae1d05b2ff0a8761b6be8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e95e216c82ae1d05b2ff0a8761b6be8">&#9670;&#160;</a></span>AngleArray</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double AngleArray[PARTICLE_COUNT]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Bomの進行方向の角度 </p>
-
-<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00021">21</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
-
-</div>
-</div>
-<a id="a3ea2b6c30a629812db554bafe87c1bdb" name="a3ea2b6c30a629812db554bafe87c1bdb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ea2b6c30a629812db554bafe87c1bdb">&#9670;&#160;</a></span>DxArray</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double DxArray[PARTICLE_COUNT]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>BomのX方向の移動量 </p>
-
-<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00024">24</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
-
-</div>
-</div>
-<a id="aeb69375368d33ee0d07cc0d1ed235d84" name="aeb69375368d33ee0d07cc0d1ed235d84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb69375368d33ee0d07cc0d1ed235d84">&#9670;&#160;</a></span>DyArray</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double DyArray[PARTICLE_COUNT]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>BomのY方向の移動量 </p>
-
-<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00025">25</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
-
-</div>
-</div>
-<a id="aae7b5b15d04550bf51dfcc6a22f88c65" name="aae7b5b15d04550bf51dfcc6a22f88c65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae7b5b15d04550bf51dfcc6a22f88c65">&#9670;&#160;</a></span>Info</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">CONSOLE_SCREEN_BUFFER_INFO Info</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>コンソールの表示領域情報 </p>
-
-<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00020">20</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
-
-</div>
-</div>
-<a id="a0c7b9412efc63450813a052f1f7d27a1" name="a0c7b9412efc63450813a052f1f7d27a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c7b9412efc63450813a052f1f7d27a1">&#9670;&#160;</a></span>Output</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">HANDLE Output</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>コンソール出力ハンドル </p>
-
-<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00019">19</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
-
-</div>
-</div>
-<a id="ae41ea56138e48a96730ffbd829f952c2" name="ae41ea56138e48a96730ffbd829f952c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae41ea56138e48a96730ffbd829f952c2">&#9670;&#160;</a></span>XArray</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double XArray[PARTICLE_COUNT]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>BomのX座標 </p>
-
-<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00022">22</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
-
-</div>
-</div>
-<a id="ab67d3c0c9af4393d19ea2259ff87e581" name="ab67d3c0c9af4393d19ea2259ff87e581"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab67d3c0c9af4393d19ea2259ff87e581">&#9670;&#160;</a></span>YArray</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double YArray[PARTICLE_COUNT]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>BomのY座標 </p>
-
-<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00023">23</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
 
 </div>
 </div>
