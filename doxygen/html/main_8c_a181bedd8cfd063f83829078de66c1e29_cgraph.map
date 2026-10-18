@@ -1,7 +1,0 @@
-<map id="DrawBoms" name="DrawBoms">
-<area shape="rect" id="Node000001" title="Bom配列の全要素を描画または消去する" alt="" coords="5,29,92,56"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="20,29,15,21,19,11,30,5,49,3,68,5,80,14,75,14,67,10,48,8,32,10,23,15,20,20,25,28"/>
-<area shape="rect" id="Node000002" href="$_draw_object_8c.html#a97d57e4a4c4b22334107d44537d0f847" title="指定位置に1文字描画する" alt="" coords="140,29,285,56"/>
-<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="92,40,127,42,121,43,92,45"/>
-<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="184,28,179,21,182,11,194,5,212,3,232,5,244,14,239,14,230,10,212,8,195,10,186,15,184,20,189,30"/>
-</map>

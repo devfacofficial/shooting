@@ -6,27 +6,6 @@
       <Path>index.html</Path>
       <Subnodes>
        <Node>
-        <Name>shooting</Name>
-        <Path>md__r_e_a_d_m_e.html</Path>
-      <Subnodes>
-         <Node>
-          <Name>ビルド</Name>
-          <Path>md__r_e_a_d_m_e.html</Path>
-          <Anchor>autotoc_md1</Anchor>
-         </Node>
-         <Node>
-          <Name>実行</Name>
-          <Path>md__r_e_a_d_m_e.html</Path>
-          <Anchor>autotoc_md2</Anchor>
-         </Node>
-         <Node>
-          <Name>s h o o t i n g</Name>
-          <Path>md__r_e_a_d_m_e.html</Path>
-          <Anchor>autotoc_md3</Anchor>
-         </Node>
-        </Subnodes>
-       </Node>
-       <Node>
         <Name>Classes</Name>
         <Path>annotated.html</Path>
       <Subnodes>
@@ -34,53 +13,6 @@
           <Name>Class List</Name>
           <Path>annotated.html</Path>
         <Subnodes>
-           <Node>
-            <Name>Bom</Name>
-            <Path>struct_bom.html</Path>
-          <Subnodes>
-             <Node>
-              <Name>angle</Name>
-              <Path>struct_bom.html</Path>
-              <Anchor>af1223e36eea6119394041156bd221e73</Anchor>
-             </Node>
-             <Node>
-              <Name>dx</Name>
-              <Path>struct_bom.html</Path>
-              <Anchor>abc6219d71364e32aa78c5f624646f8fe</Anchor>
-             </Node>
-             <Node>
-              <Name>dy</Name>
-              <Path>struct_bom.html</Path>
-              <Anchor>a92ce7236d0ed597785ac6c3b7f7ea9f3</Anchor>
-             </Node>
-             <Node>
-              <Name>x</Name>
-              <Path>struct_bom.html</Path>
-              <Anchor>a3c6ca626a0b08af05fc066c959b83785</Anchor>
-             </Node>
-             <Node>
-              <Name>y</Name>
-              <Path>struct_bom.html</Path>
-              <Anchor>ab475604828169a5998fb01c8cedff404</Anchor>
-             </Node>
-            </Subnodes>
-           </Node>
-           <Node>
-            <Name>BomArray</Name>
-            <Path>struct_bom_array.html</Path>
-          <Subnodes>
-             <Node>
-              <Name>Boms</Name>
-              <Path>struct_bom_array.html</Path>
-              <Anchor>a74735246b3f911d5d1ee41b80c36aadf</Anchor>
-             </Node>
-             <Node>
-              <Name>count</Name>
-              <Path>struct_bom_array.html</Path>
-              <Anchor>a7ae9f0784e0aa57b468cc77e4eebaee2</Anchor>
-             </Node>
-            </Subnodes>
-           </Node>
            <Node>
             <Name>DrawObject</Name>
             <Path>struct_draw_object.html</Path>
@@ -94,6 +26,53 @@
               <Name>Output</Name>
               <Path>struct_draw_object.html</Path>
               <Anchor>a0c33aefbc6bf992caea2faf7a45aea97</Anchor>
+             </Node>
+            </Subnodes>
+           </Node>
+           <Node>
+            <Name>Particle</Name>
+            <Path>struct_particle.html</Path>
+          <Subnodes>
+             <Node>
+              <Name>angle</Name>
+              <Path>struct_particle.html</Path>
+              <Anchor>af6bf98a3fdd43481cbc31f8f84619e50</Anchor>
+             </Node>
+             <Node>
+              <Name>dx</Name>
+              <Path>struct_particle.html</Path>
+              <Anchor>a0bd43014e2853ded98186f61e18a4af6</Anchor>
+             </Node>
+             <Node>
+              <Name>dy</Name>
+              <Path>struct_particle.html</Path>
+              <Anchor>a888c1a7dc88831cd8444ac29d37d0a7e</Anchor>
+             </Node>
+             <Node>
+              <Name>x</Name>
+              <Path>struct_particle.html</Path>
+              <Anchor>a1e3e5e103cee69ae9acb9c3269d009d7</Anchor>
+             </Node>
+             <Node>
+              <Name>y</Name>
+              <Path>struct_particle.html</Path>
+              <Anchor>a434ab690dde4422ac74ae10f6ace7a52</Anchor>
+             </Node>
+            </Subnodes>
+           </Node>
+           <Node>
+            <Name>ParticleArray</Name>
+            <Path>struct_particle_array.html</Path>
+          <Subnodes>
+             <Node>
+              <Name>count</Name>
+              <Path>struct_particle_array.html</Path>
+              <Anchor>a17950397518c7034d2caefe89847a1e6</Anchor>
+             </Node>
+             <Node>
+              <Name>Particles</Name>
+              <Path>struct_particle_array.html</Path>
+              <Anchor>a98e91271ba0d5060077f78022d461b69</Anchor>
              </Node>
             </Subnodes>
            </Node>
@@ -127,110 +106,6 @@
           <Name>File List</Name>
           <Path>files.html</Path>
         <Subnodes>
-           <Node>
-            <Name>BomArray.c</Name>
-            <Path>_bom_array_8c.html</Path>
-          <Subnodes>
-             <Node>
-              <Name>BomArray_Delete</Name>
-              <Path>_bom_array_8c.html</Path>
-              <Anchor>afd6ce4bc9bfb6fd32f9a976d02e40e4f</Anchor>
-             </Node>
-             <Node>
-              <Name>BomArray_Init</Name>
-              <Path>_bom_array_8c.html</Path>
-              <Anchor>a06e5e313a1427ad58e11d2234d1c2c90</Anchor>
-             </Node>
-             <Node>
-              <Name>BomArray_New</Name>
-              <Path>_bom_array_8c.html</Path>
-              <Anchor>a23cf317218910215769c92133b837ccd</Anchor>
-             </Node>
-             <Node>
-              <Name>BomArray_Update</Name>
-              <Path>_bom_array_8c.html</Path>
-              <Anchor>ac1d22bd2b971bf8b20b9cd5d0d339af2</Anchor>
-             </Node>
-            </Subnodes>
-           </Node>
-           <Node>
-            <Name>BomArray.h</Name>
-            <Path>_bom_array_8h.html</Path>
-          <Subnodes>
-             <Node>
-              <Name>Bom</Name>
-              <Path>struct_bom.html</Path>
-            <Subnodes>
-               <Node>
-                <Name>angle</Name>
-                <Path>struct_bom.html</Path>
-                <Anchor>af1223e36eea6119394041156bd221e73</Anchor>
-               </Node>
-               <Node>
-                <Name>dx</Name>
-                <Path>struct_bom.html</Path>
-                <Anchor>abc6219d71364e32aa78c5f624646f8fe</Anchor>
-               </Node>
-               <Node>
-                <Name>dy</Name>
-                <Path>struct_bom.html</Path>
-                <Anchor>a92ce7236d0ed597785ac6c3b7f7ea9f3</Anchor>
-               </Node>
-               <Node>
-                <Name>x</Name>
-                <Path>struct_bom.html</Path>
-                <Anchor>a3c6ca626a0b08af05fc066c959b83785</Anchor>
-               </Node>
-               <Node>
-                <Name>y</Name>
-                <Path>struct_bom.html</Path>
-                <Anchor>ab475604828169a5998fb01c8cedff404</Anchor>
-               </Node>
-              </Subnodes>
-             </Node>
-             <Node>
-              <Name>BomArray</Name>
-              <Path>struct_bom_array.html</Path>
-            <Subnodes>
-               <Node>
-                <Name>Boms</Name>
-                <Path>struct_bom_array.html</Path>
-                <Anchor>a74735246b3f911d5d1ee41b80c36aadf</Anchor>
-               </Node>
-               <Node>
-                <Name>count</Name>
-                <Path>struct_bom_array.html</Path>
-                <Anchor>a7ae9f0784e0aa57b468cc77e4eebaee2</Anchor>
-               </Node>
-              </Subnodes>
-             </Node>
-             <Node>
-              <Name>BOM_ARRAY_MAX_COUNT</Name>
-              <Path>_bom_array_8h.html</Path>
-              <Anchor>aa185a046349387e1192a92f8659334b3</Anchor>
-             </Node>
-             <Node>
-              <Name>BomArray_Delete</Name>
-              <Path>_bom_array_8h.html</Path>
-              <Anchor>afd6ce4bc9bfb6fd32f9a976d02e40e4f</Anchor>
-             </Node>
-             <Node>
-              <Name>BomArray_Init</Name>
-              <Path>_bom_array_8h.html</Path>
-              <Anchor>a06e5e313a1427ad58e11d2234d1c2c90</Anchor>
-             </Node>
-             <Node>
-              <Name>BomArray_New</Name>
-              <Path>_bom_array_8h.html</Path>
-              <Anchor>a23cf317218910215769c92133b837ccd</Anchor>
-             </Node>
-             <Node>
-              <Name>BomArray_Update</Name>
-              <Path>_bom_array_8h.html</Path>
-              <Anchor>ac1d22bd2b971bf8b20b9cd5d0d339af2</Anchor>
-             </Node>
-            </Subnodes>
-           </Node>
            <Node>
             <Name>DrawObject.c</Name>
             <Path>_draw_object_8c.html</Path>
@@ -304,6 +179,11 @@
             <Path>main_8c.html</Path>
           <Subnodes>
              <Node>
+              <Name>FRAME_COUNT</Name>
+              <Path>main_8c.html</Path>
+              <Anchor>a7a6c3aace699ca6cbaf8ac2072ce5485</Anchor>
+             </Node>
+             <Node>
               <Name>MSG_ALLOCATE_FAILED</Name>
               <Path>main_8c.html</Path>
               <Anchor>a0adc7f6c56e2eb1e23fa35a1ddb9bbc3</Anchor>
@@ -329,14 +209,123 @@
               <Anchor>a587ef3d5591c12807a8da97d4fecf34e</Anchor>
              </Node>
              <Node>
-              <Name>DrawBoms</Name>
+              <Name>PARTICLE_COUNT</Name>
               <Path>main_8c.html</Path>
-              <Anchor>a181bedd8cfd063f83829078de66c1e29</Anchor>
+              <Anchor>aba83a9b5956fd7443e13ac1889120980</Anchor>
+             </Node>
+             <Node>
+              <Name>DrawParticles</Name>
+              <Path>main_8c.html</Path>
+              <Anchor>a8475cd34f0cf558d3d6f43cd9594360f</Anchor>
              </Node>
              <Node>
               <Name>main</Name>
               <Path>main_8c.html</Path>
               <Anchor>a840291bc02cba5474a4cb46a9b9566fe</Anchor>
+             </Node>
+            </Subnodes>
+           </Node>
+           <Node>
+            <Name>ParticleArray.c</Name>
+            <Path>_particle_array_8c.html</Path>
+          <Subnodes>
+             <Node>
+              <Name>ParticleArray_Delete</Name>
+              <Path>_particle_array_8c.html</Path>
+              <Anchor>a044a133174b43e276e962f365efefea3</Anchor>
+             </Node>
+             <Node>
+              <Name>ParticleArray_Init</Name>
+              <Path>_particle_array_8c.html</Path>
+              <Anchor>a934b0faab69629f21e54c5a535c65ceb</Anchor>
+             </Node>
+             <Node>
+              <Name>ParticleArray_New</Name>
+              <Path>_particle_array_8c.html</Path>
+              <Anchor>a2715e34031e145fcfa17b55f1b391476</Anchor>
+             </Node>
+             <Node>
+              <Name>ParticleArray_Update</Name>
+              <Path>_particle_array_8c.html</Path>
+              <Anchor>a9f822108ffb4b4c2eb8168d370c24843</Anchor>
+             </Node>
+            </Subnodes>
+           </Node>
+           <Node>
+            <Name>ParticleArray.h</Name>
+            <Path>_particle_array_8h.html</Path>
+          <Subnodes>
+             <Node>
+              <Name>Particle</Name>
+              <Path>struct_particle.html</Path>
+            <Subnodes>
+               <Node>
+                <Name>angle</Name>
+                <Path>struct_particle.html</Path>
+                <Anchor>af6bf98a3fdd43481cbc31f8f84619e50</Anchor>
+               </Node>
+               <Node>
+                <Name>dx</Name>
+                <Path>struct_particle.html</Path>
+                <Anchor>a0bd43014e2853ded98186f61e18a4af6</Anchor>
+               </Node>
+               <Node>
+                <Name>dy</Name>
+                <Path>struct_particle.html</Path>
+                <Anchor>a888c1a7dc88831cd8444ac29d37d0a7e</Anchor>
+               </Node>
+               <Node>
+                <Name>x</Name>
+                <Path>struct_particle.html</Path>
+                <Anchor>a1e3e5e103cee69ae9acb9c3269d009d7</Anchor>
+               </Node>
+               <Node>
+                <Name>y</Name>
+                <Path>struct_particle.html</Path>
+                <Anchor>a434ab690dde4422ac74ae10f6ace7a52</Anchor>
+               </Node>
+              </Subnodes>
+             </Node>
+             <Node>
+              <Name>ParticleArray</Name>
+              <Path>struct_particle_array.html</Path>
+            <Subnodes>
+               <Node>
+                <Name>count</Name>
+                <Path>struct_particle_array.html</Path>
+                <Anchor>a17950397518c7034d2caefe89847a1e6</Anchor>
+               </Node>
+               <Node>
+                <Name>Particles</Name>
+                <Path>struct_particle_array.html</Path>
+                <Anchor>a98e91271ba0d5060077f78022d461b69</Anchor>
+               </Node>
+              </Subnodes>
+             </Node>
+             <Node>
+              <Name>PARTICLE_ARRAY_MAX_COUNT</Name>
+              <Path>_particle_array_8h.html</Path>
+              <Anchor>abaf1dde0c2bd1a5a1c0f0c9faf8312ab</Anchor>
+             </Node>
+             <Node>
+              <Name>ParticleArray_Delete</Name>
+              <Path>_particle_array_8h.html</Path>
+              <Anchor>a044a133174b43e276e962f365efefea3</Anchor>
+             </Node>
+             <Node>
+              <Name>ParticleArray_Init</Name>
+              <Path>_particle_array_8h.html</Path>
+              <Anchor>a934b0faab69629f21e54c5a535c65ceb</Anchor>
+             </Node>
+             <Node>
+              <Name>ParticleArray_New</Name>
+              <Path>_particle_array_8h.html</Path>
+              <Anchor>a2715e34031e145fcfa17b55f1b391476</Anchor>
+             </Node>
+             <Node>
+              <Name>ParticleArray_Update</Name>
+              <Path>_particle_array_8h.html</Path>
+              <Anchor>a9f822108ffb4b4c2eb8168d370c24843</Anchor>
              </Node>
             </Subnodes>
            </Node>

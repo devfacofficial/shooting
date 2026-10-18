@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['angle_0',['angle',['../struct_bom.html#af1223e36eea6119394041156bd221e73',1,'Bom']]]
+  ['angle_0',['angle',['../struct_particle.html#af6bf98a3fdd43481cbc31f8f84619e50',1,'Particle']]]
 ];

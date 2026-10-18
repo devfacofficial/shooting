@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['y_0',['y',['../struct_bom.html#ab475604828169a5998fb01c8cedff404',1,'Bom']]]
+  ['解説記事_0',['解説記事',['../E:/Develop/C/shooting_2nd/README.md#autotoc_md2',1,'']]]
 ];

@@ -1,6 +1,6 @@
 var annotated_dup =
 [
-    [ "Bom", "struct_bom.html", "struct_bom" ],
-    [ "BomArray", "struct_bom_array.html", "struct_bom_array" ],
-    [ "DrawObject", "struct_draw_object.html", "struct_draw_object" ]
+    [ "DrawObject", "struct_draw_object.html", "struct_draw_object" ],
+    [ "Particle", "struct_particle.html", "struct_particle" ],
+    [ "ParticleArray", "struct_particle_array.html", "struct_particle_array" ]
 ];
