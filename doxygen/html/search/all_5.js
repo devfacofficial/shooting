@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['i_20n_20g_0',['s h o o t i n g',['../E:/Develop/C/shooting_1st/README.md#autotoc_md3',1,'']]],
-  ['info_1',['Info',['../main_8c.html#aae7b5b15d04550bf51dfcc6a22f88c65',1,'main.c']]]
+  ['output_0',['Output',['../main_8c.html#a0c7b9412efc63450813a052f1f7d27a1',1,'main.c']]]
 ];

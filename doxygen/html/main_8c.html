@@ -152,8 +152,8 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a840291bc02cba5474a4cb46a9b9566fe" id="r_a840291bc02cba5474a4cb46a9b9566fe"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a840291bc02cba5474a4cb46a9b9566fe">main</a> (void)</td></tr>
 <tr class="memdesc:a840291bc02cba5474a4cb46a9b9566fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">メイン  <br /></td></tr>
-<tr class="memitem:aeab40aa752126f3afe8cd1191ac41443" id="r_aeab40aa752126f3afe8cd1191ac41443"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aeab40aa752126f3afe8cd1191ac41443">DrawBoms</a> (uint8_t ch, double xArray[], double yArray[], uint32_t count)</td></tr>
-<tr class="memdesc:aeab40aa752126f3afe8cd1191ac41443"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bom配列の全要素を描画または消去する  <br /></td></tr>
+<tr class="memitem:a10746ec417cd18570d82b5f2272fa64c" id="r_a10746ec417cd18570d82b5f2272fa64c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a10746ec417cd18570d82b5f2272fa64c">DrawParticles</a> (uint8_t ch, double xArray[], double yArray[], uint32_t count)</td></tr>
+<tr class="memdesc:a10746ec417cd18570d82b5f2272fa64c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Particle配列の全要素を描画または消去する  <br /></td></tr>
 <tr class="memitem:a2f8299491628acbd0062c38b2f734a07" id="r_a2f8299491628acbd0062c38b2f734a07"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a2f8299491628acbd0062c38b2f734a07">PutChar</a> (int32_t x, int32_t y, uint8_t ch)</td></tr>
 <tr class="memdesc:a2f8299491628acbd0062c38b2f734a07"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定位置に1文字描画する  <br /></td></tr>
 </table><table class="memberdecls">
@@ -164,15 +164,15 @@ Variables</h2></td></tr>
 <tr class="memitem:aae7b5b15d04550bf51dfcc6a22f88c65" id="r_aae7b5b15d04550bf51dfcc6a22f88c65"><td class="memItemLeft">CONSOLE_SCREEN_BUFFER_INFO&#160;</td><td class="memItemRight"><a class="el" href="#aae7b5b15d04550bf51dfcc6a22f88c65">Info</a></td></tr>
 <tr class="memdesc:aae7b5b15d04550bf51dfcc6a22f88c65"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンソールの表示領域情報  <br /></td></tr>
 <tr class="memitem:a1e95e216c82ae1d05b2ff0a8761b6be8" id="r_a1e95e216c82ae1d05b2ff0a8761b6be8"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a1e95e216c82ae1d05b2ff0a8761b6be8">AngleArray</a> [<a class="el" href="#aba83a9b5956fd7443e13ac1889120980">PARTICLE_COUNT</a>]</td></tr>
-<tr class="memdesc:a1e95e216c82ae1d05b2ff0a8761b6be8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bomの進行方向の角度  <br /></td></tr>
+<tr class="memdesc:a1e95e216c82ae1d05b2ff0a8761b6be8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Particleの進行方向の角度  <br /></td></tr>
 <tr class="memitem:ae41ea56138e48a96730ffbd829f952c2" id="r_ae41ea56138e48a96730ffbd829f952c2"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#ae41ea56138e48a96730ffbd829f952c2">XArray</a> [<a class="el" href="#aba83a9b5956fd7443e13ac1889120980">PARTICLE_COUNT</a>]</td></tr>
-<tr class="memdesc:ae41ea56138e48a96730ffbd829f952c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">BomのX座標  <br /></td></tr>
+<tr class="memdesc:ae41ea56138e48a96730ffbd829f952c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">ParticleのX座標  <br /></td></tr>
 <tr class="memitem:ab67d3c0c9af4393d19ea2259ff87e581" id="r_ab67d3c0c9af4393d19ea2259ff87e581"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#ab67d3c0c9af4393d19ea2259ff87e581">YArray</a> [<a class="el" href="#aba83a9b5956fd7443e13ac1889120980">PARTICLE_COUNT</a>]</td></tr>
-<tr class="memdesc:ab67d3c0c9af4393d19ea2259ff87e581"><td class="mdescLeft">&#160;</td><td class="mdescRight">BomのY座標  <br /></td></tr>
+<tr class="memdesc:ab67d3c0c9af4393d19ea2259ff87e581"><td class="mdescLeft">&#160;</td><td class="mdescRight">ParticleのY座標  <br /></td></tr>
 <tr class="memitem:a3ea2b6c30a629812db554bafe87c1bdb" id="r_a3ea2b6c30a629812db554bafe87c1bdb"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a3ea2b6c30a629812db554bafe87c1bdb">DxArray</a> [<a class="el" href="#aba83a9b5956fd7443e13ac1889120980">PARTICLE_COUNT</a>]</td></tr>
-<tr class="memdesc:a3ea2b6c30a629812db554bafe87c1bdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">BomのX方向の移動量  <br /></td></tr>
+<tr class="memdesc:a3ea2b6c30a629812db554bafe87c1bdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">ParticleのX方向の移動量  <br /></td></tr>
 <tr class="memitem:aeb69375368d33ee0d07cc0d1ed235d84" id="r_aeb69375368d33ee0d07cc0d1ed235d84"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#aeb69375368d33ee0d07cc0d1ed235d84">DyArray</a> [<a class="el" href="#aba83a9b5956fd7443e13ac1889120980">PARTICLE_COUNT</a>]</td></tr>
-<tr class="memdesc:aeb69375368d33ee0d07cc0d1ed235d84"><td class="mdescLeft">&#160;</td><td class="mdescRight">BomのY方向の移動量  <br /></td></tr>
+<tr class="memdesc:aeb69375368d33ee0d07cc0d1ed235d84"><td class="mdescLeft">&#160;</td><td class="mdescRight">ParticleのY方向の移動量  <br /></td></tr>
 </table>
 <a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
 <a id="a7a6c3aace699ca6cbaf8ac2072ce5485" name="a7a6c3aace699ca6cbaf8ac2072ce5485"></a>
@@ -211,14 +211,14 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="aeab40aa752126f3afe8cd1191ac41443" name="aeab40aa752126f3afe8cd1191ac41443"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeab40aa752126f3afe8cd1191ac41443">&#9670;&#160;</a></span>DrawBoms()</h2>
+<a id="a10746ec417cd18570d82b5f2272fa64c" name="a10746ec417cd18570d82b5f2272fa64c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10746ec417cd18570d82b5f2272fa64c">&#9670;&#160;</a></span>DrawParticles()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void DrawBoms </td>
+          <td class="memname">void DrawParticles </td>
           <td>(</td>
           <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>ch</em></span>, </td>
         </tr>
@@ -240,7 +240,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Bom配列の全要素を描画または消去する </p>
+<p>Particle配列の全要素を描画または消去する </p>
 <p>無し </p><dl class="section return"><dt>Returns</dt><dd>無し </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -256,25 +256,25 @@ Variables</h2></td></tr>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="main_8c_aeab40aa752126f3afe8cd1191ac41443_cgraph.png" border="0" usemap="#amain_8c_aeab40aa752126f3afe8cd1191ac41443_cgraph" loading="lazy" alt=""/></div>
-<map name="amain_8c_aeab40aa752126f3afe8cd1191ac41443_cgraph" id="amain_8c_aeab40aa752126f3afe8cd1191ac41443_cgraph">
-<area shape="rect" title="Bom配列の全要素を描画または消去する" alt="" coords="5,29,92,56"/>
-<area shape="poly" title=" " alt="" coords="26,29,22,21,25,11,34,5,49,3,64,5,73,14,68,14,62,10,48,8,36,10,29,14,28,20,31,29"/>
-<area shape="rect" href="main_8c.html#a2f8299491628acbd0062c38b2f734a07" title="指定位置に1文字描画する" alt="" coords="140,29,209,56"/>
-<area shape="poly" title=" " alt="" coords="92,40,126,42,121,43,92,45"/>
-<area shape="poly" title=" " alt="" coords="152,28,148,21,151,11,160,5,174,3,190,5,199,15,194,14,188,10,174,8,162,10,155,14,153,20,157,30"/>
+<div class="center"><img src="main_8c_a10746ec417cd18570d82b5f2272fa64c_cgraph.png" border="0" usemap="#amain_8c_a10746ec417cd18570d82b5f2272fa64c_cgraph" loading="lazy" alt=""/></div>
+<map name="amain_8c_a10746ec417cd18570d82b5f2272fa64c_cgraph" id="amain_8c_a10746ec417cd18570d82b5f2272fa64c_cgraph">
+<area shape="rect" title="Particle配列の全要素を描画または消去する" alt="" coords="5,29,109,56"/>
+<area shape="poly" title=" " alt="" coords="33,29,29,21,32,11,42,5,57,3,74,5,83,14,78,14,71,10,57,8,43,10,36,14,35,20,38,29"/>
+<area shape="rect" href="main_8c.html#a2f8299491628acbd0062c38b2f734a07" title="指定位置に1文字描画する" alt="" coords="157,29,226,56"/>
+<area shape="poly" title=" " alt="" coords="109,40,144,42,138,43,109,45"/>
+<area shape="poly" title=" " alt="" coords="168,28,164,21,166,11,176,5,191,3,208,5,218,15,212,14,206,10,191,8,178,10,171,14,169,20,172,30"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="main_8c_aeab40aa752126f3afe8cd1191ac41443_icgraph.png" border="0" usemap="#amain_8c_aeab40aa752126f3afe8cd1191ac41443_icgraph" loading="lazy" alt=""/></div>
-<map name="amain_8c_aeab40aa752126f3afe8cd1191ac41443_icgraph" id="amain_8c_aeab40aa752126f3afe8cd1191ac41443_icgraph">
-<area shape="rect" title="Bom配列の全要素を描画または消去する" alt="" coords="103,29,189,56"/>
-<area shape="poly" title=" " alt="" coords="164,14,158,10,146,8,134,10,128,14,127,20,130,30,125,28,121,20,124,11,132,5,146,3,160,5,169,15"/>
+<div class="center"><img src="main_8c_a10746ec417cd18570d82b5f2272fa64c_icgraph.png" border="0" usemap="#amain_8c_a10746ec417cd18570d82b5f2272fa64c_icgraph" loading="lazy" alt=""/></div>
+<map name="amain_8c_a10746ec417cd18570d82b5f2272fa64c_icgraph" id="amain_8c_a10746ec417cd18570d82b5f2272fa64c_icgraph">
+<area shape="rect" title="Particle配列の全要素を描画または消去する" alt="" coords="103,29,206,56"/>
+<area shape="poly" title=" " alt="" coords="174,14,168,10,154,8,142,10,135,14,134,20,137,30,132,28,128,20,131,11,140,5,154,3,170,5,179,15"/>
 <area shape="rect" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="メイン" alt="" coords="5,29,55,56"/>
-<area shape="poly" title=" " alt="" coords="85,44,55,45,55,40,90,42"/>
-<area shape="poly" title=" " alt="" coords="48,15,42,10,30,8,19,10,13,14,11,20,14,28,9,29,6,20,8,11,16,5,30,3,45,5,53,14"/>
+<area shape="poly" title=" " alt="" coords="84,44,55,45,55,40,89,42"/>
+<area shape="poly" title=" " alt="" coords="49,15,43,10,30,8,18,10,11,14,9,20,13,28,8,29,4,20,7,11,16,5,30,3,45,5,55,14"/>
 </map>
 </div>
 
@@ -296,7 +296,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>メイン </p>
-<p>コンソールにBomを描画する </p><dl class="section return"><dt>Returns</dt><dd>無し </dd></dl>
+<p>コンソールにParticleを描画する </p><dl class="section return"><dt>Returns</dt><dd>無し </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00036">36</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
 <div class="dynheader">
@@ -305,13 +305,13 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="main_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph.png" border="0" usemap="#amain_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph" loading="lazy" alt=""/></div>
 <map name="amain_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph" id="amain_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph">
 <area shape="rect" title="メイン" alt="" coords="5,29,55,56"/>
-<area shape="poly" title=" " alt="" coords="9,29,6,20,8,11,16,5,30,3,45,5,53,14,48,15,42,10,30,8,19,10,13,14,11,20,14,28"/>
-<area shape="rect" href="main_8c.html#aeab40aa752126f3afe8cd1191ac41443" title="Bom配列の全要素を描画または消去する" alt="" coords="103,29,189,56"/>
-<area shape="poly" title=" " alt="" coords="55,40,90,42,85,43,55,45"/>
-<area shape="poly" title=" " alt="" coords="125,28,121,20,124,11,132,5,146,3,160,5,169,15,164,14,158,10,146,8,134,10,128,14,127,20,130,30"/>
-<area shape="rect" href="main_8c.html#a2f8299491628acbd0062c38b2f734a07" title="指定位置に1文字描画する" alt="" coords="237,29,306,56"/>
-<area shape="poly" title=" " alt="" coords="189,40,224,43,218,43,190,45"/>
-<area shape="poly" title=" " alt="" coords="249,28,245,21,248,11,257,5,272,3,287,5,296,15,291,13,285,10,272,8,259,10,252,14,251,20,254,30"/>
+<area shape="poly" title=" " alt="" coords="8,29,4,20,7,11,16,5,30,3,45,5,55,14,49,15,43,10,30,8,18,10,11,14,9,20,13,28"/>
+<area shape="rect" href="main_8c.html#a10746ec417cd18570d82b5f2272fa64c" title="Particle配列の全要素を描画または消去する" alt="" coords="103,29,206,56"/>
+<area shape="poly" title=" " alt="" coords="55,40,90,42,85,44,55,45"/>
+<area shape="poly" title=" " alt="" coords="132,28,128,20,131,11,140,5,154,3,170,5,179,15,174,14,168,10,154,8,142,10,135,14,134,20,137,30"/>
+<area shape="rect" href="main_8c.html#a2f8299491628acbd0062c38b2f734a07" title="指定位置に1文字描画する" alt="" coords="254,29,323,56"/>
+<area shape="poly" title=" " alt="" coords="207,40,241,43,236,43,207,45"/>
+<area shape="poly" title=" " alt="" coords="265,28,261,21,264,11,273,5,289,3,305,5,315,15,310,13,303,10,289,8,275,10,268,14,266,20,270,30"/>
 </map>
 </div>
 <div class="dynheader">
@@ -376,14 +376,14 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8c_a2f8299491628acbd0062c38b2f734a07_icgraph.png" border="0" usemap="#amain_8c_a2f8299491628acbd0062c38b2f734a07_icgraph" loading="lazy" alt=""/></div>
 <map name="amain_8c_a2f8299491628acbd0062c38b2f734a07_icgraph" id="amain_8c_a2f8299491628acbd0062c38b2f734a07_icgraph">
-<area shape="rect" title="指定位置に1文字描画する" alt="" coords="237,29,306,56"/>
-<area shape="poly" title=" " alt="" coords="291,13,285,10,272,8,259,10,252,14,251,20,254,30,249,28,245,21,248,11,257,5,272,3,287,5,296,15"/>
-<area shape="rect" href="main_8c.html#aeab40aa752126f3afe8cd1191ac41443" title="Bom配列の全要素を描画または消去する" alt="" coords="103,29,189,56"/>
-<area shape="poly" title=" " alt="" coords="219,43,190,45,190,40,224,43"/>
-<area shape="poly" title=" " alt="" coords="164,14,158,10,146,8,134,10,128,14,127,20,130,30,125,28,121,20,124,11,132,5,146,3,160,5,169,15"/>
+<area shape="rect" title="指定位置に1文字描画する" alt="" coords="254,29,323,56"/>
+<area shape="poly" title=" " alt="" coords="310,13,303,10,289,8,275,10,268,14,266,20,270,30,265,28,261,21,264,11,273,5,289,3,305,5,315,15"/>
+<area shape="rect" href="main_8c.html#a10746ec417cd18570d82b5f2272fa64c" title="Particle配列の全要素を描画または消去する" alt="" coords="103,29,206,56"/>
+<area shape="poly" title=" " alt="" coords="236,43,206,45,206,40,241,43"/>
+<area shape="poly" title=" " alt="" coords="174,14,168,10,154,8,142,10,135,14,134,20,137,30,132,28,128,20,131,11,140,5,154,3,170,5,179,15"/>
 <area shape="rect" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="メイン" alt="" coords="5,29,55,56"/>
-<area shape="poly" title=" " alt="" coords="85,44,55,45,55,40,90,42"/>
-<area shape="poly" title=" " alt="" coords="48,15,42,10,30,8,19,10,13,14,11,20,14,28,9,29,6,20,8,11,16,5,30,3,45,5,53,14"/>
+<area shape="poly" title=" " alt="" coords="84,44,55,45,55,40,89,42"/>
+<area shape="poly" title=" " alt="" coords="49,15,43,10,30,8,18,10,11,14,9,20,13,28,8,29,4,20,7,11,16,5,30,3,45,5,55,14"/>
 </map>
 </div>
 
@@ -402,7 +402,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Bomの進行方向の角度 </p>
+<p>Particleの進行方向の角度 </p>
 
 <p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00021">21</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
 
@@ -420,7 +420,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>BomのX方向の移動量 </p>
+<p>ParticleのX方向の移動量 </p>
 
 <p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00024">24</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
 
@@ -438,7 +438,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>BomのY方向の移動量 </p>
+<p>ParticleのY方向の移動量 </p>
 
 <p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00025">25</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
 
@@ -492,7 +492,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>BomのX座標 </p>
+<p>ParticleのX座標 </p>
 
 <p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00022">22</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
 
@@ -510,7 +510,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>BomのY座標 </p>
+<p>ParticleのY座標 </p>
 
 <p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00023">23</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
 

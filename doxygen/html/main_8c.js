@@ -2,7 +2,7 @@ var main_8c =
 [
     [ "FRAME_COUNT", "main_8c.html#a7a6c3aace699ca6cbaf8ac2072ce5485", null ],
     [ "PARTICLE_COUNT", "main_8c.html#aba83a9b5956fd7443e13ac1889120980", null ],
-    [ "DrawBoms", "main_8c.html#aeab40aa752126f3afe8cd1191ac41443", null ],
+    [ "DrawParticles", "main_8c.html#a10746ec417cd18570d82b5f2272fa64c", null ],
     [ "main", "main_8c.html#a840291bc02cba5474a4cb46a9b9566fe", null ],
     [ "PutChar", "main_8c.html#a2f8299491628acbd0062c38b2f734a07", null ],
     [ "AngleArray", "main_8c.html#a1e95e216c82ae1d05b2ff0a8761b6be8", null ],
