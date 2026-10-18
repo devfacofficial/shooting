@@ -1,7 +1,0 @@
-<map id="BomArray.h" name="BomArray.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="55,5,144,32"/>
-<area shape="rect" id="Node000002" href="$_bom_array_8c.html" title=" " alt="" coords="5,80,95,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,44,61,81,56,78,80,46"/>
-<area shape="rect" id="Node000003" href="$main_8c.html" title=" " alt="" coords="118,80,179,107"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="118,43,143,80,138,79,115,47"/>
-</map>

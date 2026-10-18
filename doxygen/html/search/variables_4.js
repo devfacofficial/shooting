@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['info_0',['Info',['../struct_draw_object.html#a699a9a091cf0f87be422248399a11da6',1,'DrawObject']]]
+  ['output_0',['Output',['../struct_draw_object.html#a0c33aefbc6bf992caea2faf7a45aea97',1,'DrawObject']]]
 ];
