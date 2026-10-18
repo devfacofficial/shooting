@@ -58,7 +58,7 @@ PROJECT_ICON           =
 # OUTPUT_DIRECTORY タグは、生成されたドキュメントが書き込まれるパス（相対または絶対）を指定するために使用されます。相対パスが入力された場合
 # 、Doxygenが開始された場所からの相対パスになります。空白のままにすると、現在のディレクトリが使用されます。
 
-OUTPUT_DIRECTORY       = E:/Develop/C/shooting_2nd/doxygen
+OUTPUT_DIRECTORY       = E:/Develop/C/shooting_1st/doxygen
 
 # CREATE_SUBDIRS タグが YES に設定されている場合、Doxygenは各出力形式の出力ディレクトリの下に最大4096のサブディレクトリ（2レ
 # ベル）を作成し、生成されたファイルをこれらのディレクトリに分散させます。このオプションは、Doxygenに大量のソースファイルを処理させる場合に便利です。す
@@ -833,7 +833,7 @@ WARN_LOGFILE           =
 # LE_PATTERNSおよびEXTENSION_MAPPINGも参照してください。
 # 注: このタグが空の場合、現在のディレクトリが検索されます。
 
-INPUT                  =
+INPUT                  = E:/Develop/C/shooting_1st
 
 # このタグを使用して、Doxygenが解析するソースファイルの文字エンコーディングを指定できます。内部的には、DoxygenはUTF-
 # 8エンコーディングを使用します。Doxygenはトランスコーディングにlibiconv（またはlibcに組み込まれたiconv）を使用します。可能なエンコー
@@ -921,7 +921,7 @@ FILE_PATTERNS          = *.c \
 # RECURSIVE タグを使用して、入力ファイルのサブディレクトリも検索するかどうかを指定できます。
 # デフォルト値は NO です。
 
-RECURSIVE              = NO
+RECURSIVE              = YES
 
 # EXCLUDE タグを使用して、INPUTソースファイルから除外するファイルおよび/またはディレクトリを指定できます。これにより、INPUTタグでルートが
 # 指定されたディレクトリツリーからサブディレクトリを簡単に除外できます。
@@ -1321,7 +1321,7 @@ HTML_INDEX_NUM_ENTRIES = 100
 # デフォルト値は NO です。
 # このタグはタグ GENERATE_HTML を YES に設定する必要があります。
 
-GENERATE_DOCSET        = YES
+GENERATE_DOCSET        = NO
 
 # このタグはdocsetフィードの名前を決定します。ドキュメントフィードは、単一のプロバイダー（企業や製品スイートなど）からの複数のドキュメントセットをグルー
 # プ化するための上位分類を提供します。

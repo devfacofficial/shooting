@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['o_20o_20t_20i_20n_20g_0',['s h o o t i n g',['../md__r_e_a_d_m_e.html#autotoc_md3',1,'']]],
-  ['o_20t_20i_20n_20g_1',['s h o o t i n g',['../md__r_e_a_d_m_e.html#autotoc_md3',1,'']]],
-  ['output_2',['Output',['../struct_draw_object.html#a0c33aefbc6bf992caea2faf7a45aea97',1,'DrawObject']]]
+  ['particle_5fcount_0',['PARTICLE_COUNT',['../main_8c.html#aba83a9b5956fd7443e13ac1889120980',1,'main.c']]],
+  ['putchar_1',['PutChar',['../main_8c.html#a2f8299491628acbd0062c38b2f734a07',1,'main.c']]]
 ];

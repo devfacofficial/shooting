@@ -25,24 +25,12 @@
 var NAVTREE =
 [
   [ "Draw Particles", "index.html", [
-    [ "shooting", "md__r_e_a_d_m_e.html", [
-      [ "ビルド", "md__r_e_a_d_m_e.html#autotoc_md1", null ],
-      [ "実行", "md__r_e_a_d_m_e.html#autotoc_md2", null ],
-      [ "s h o o t i n g", "md__r_e_a_d_m_e.html#autotoc_md3", null ]
-    ] ],
-    [ "Classes", "annotated.html", [
-      [ "Class List", "annotated.html", "annotated_dup" ],
-      [ "Class Index", "classes.html", null ],
-      [ "Class Members", "functions.html", [
-        [ "All", "functions.html", null ],
-        [ "Variables", "functions_vars.html", null ]
-      ] ]
-    ] ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
+        [ "Variables", "globals_vars.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
@@ -51,7 +39,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_bom_array_8c.html"
+"files.html"
 ];
 
 const SYNCONMSG = 'click to disable panel synchronization';

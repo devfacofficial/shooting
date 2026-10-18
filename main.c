@@ -5,22 +5,28 @@
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 #include <windows.h>
 #include <math.h>
-#include "BomArray.h"
-#include "DrawObject.h"
 
+//----------------------------------------------------------------------------
+// const
 #define PARTICLE_COUNT  500
 #define FRAME_COUNT     100
 
-int main(void);
-bool DrawBoms(DrawObject* drawObject, const BomArray* bomArray, uint8_t ch);
+//-----------------------------------------------------------------------------
+// global
+HANDLE Output;                      //!< コンソール出力ハンドル
+CONSOLE_SCREEN_BUFFER_INFO Info;    //!< コンソールの表示領域情報
+double AngleArray[PARTICLE_COUNT];  //!< Bomの進行方向の角度
+double XArray[PARTICLE_COUNT];      //!< BomのX座標
+double YArray[PARTICLE_COUNT];      //!< BomのY座標
+double DxArray[PARTICLE_COUNT];     //!< BomのX方向の移動量
+double DyArray[PARTICLE_COUNT];     //!< BomのY方向の移動量
 
-#define MSG_INITIALIZE_FAILED "Failed to initialize console drawing.\n"
-#define MSG_ALLOCATE_FAILED   "Failed to allocate particle array.\n"
-#define MSG_DIMENSION_FAILED  "Failed to get console dimensions.\n"
-#define MSG_DRAW_FAILED       "Failed to draw boms.\n"
-#define MSG_CLEAR_FAILED      "Failed to clear boms.\n"
+int main(void);
+void DrawBoms(uint8_t ch, double xArray[], double yArray[], uint32_t count);
+bool PutChar(int32_t x, int32_t y, uint8_t ch);
 
 //-----------------------------------------------------------------------------
 //! @brief   メイン
@@ -29,78 +35,88 @@ bool DrawBoms(DrawObject* drawObject, const BomArray* bomArray, uint8_t ch);
 //!
 int main(void)
 {
-    int result = 1;
     int32_t centerX = 0;
     int32_t centerY = 0;
-    DrawObject* drawObject = NULL;
-    BomArray* bomArray = NULL;
 
-    // 初期化
-    drawObject = DrawObject_New();
-    if(drawObject == NULL)
-    {
-        fputs(MSG_INITIALIZE_FAILED, stderr);
-        goto END;
-    }
+    // 描画情報の初期化
+    Output = GetStdHandle(STD_OUTPUT_HANDLE);
+    GetConsoleScreenBufferInfo(Output, &Info);
+    centerX = Info.srWindow.Left + (Info.srWindow.Right - Info.srWindow.Left + 1) / 2;
+    centerY = Info.srWindow.Top + (Info.srWindow.Bottom - Info.srWindow.Top + 1) / 2;
 
-    bomArray = BomArray_New(PARTICLE_COUNT);
-    if(bomArray == NULL)
+    // Bom初期化
+    for(uint32_t idx=0; idx<PARTICLE_COUNT; idx++)
     {
-        fputs(MSG_ALLOCATE_FAILED, stderr);
-        goto END;
+        AngleArray[idx] = (double)idx * (2.0 * 3.141592653589793 / PARTICLE_COUNT);
+        XArray[idx]     = (double)centerX;
+        YArray[idx]     = (double)centerY;
+        DxArray[idx]    = cos(AngleArray[idx]);
+        DyArray[idx]    = sin(AngleArray[idx]);
     }
-
-    if(!DrawObject_GetCenter(drawObject, &centerX, &centerY))
-    {
-        fputs(MSG_DIMENSION_FAILED, stderr);
-        goto END;
-    }
-    BomArray_Init(bomArray, centerX, centerY);
 
     // Bom描画
     for (int32_t repeat = 0; repeat < FRAME_COUNT; repeat++)
     {
-        if(!DrawBoms(drawObject, bomArray, '*'))
-        {
-            fputs(MSG_DRAW_FAILED, stderr);
-            goto END;
-        }
+        DrawBoms('*', XArray, YArray, PARTICLE_COUNT);
         Sleep(80);
-        if(!DrawBoms(drawObject, bomArray, ' '))
-        {
-            fputs(MSG_CLEAR_FAILED, stderr);
-            goto END;
-        }
-        BomArray_Update(bomArray);
-    }
-    result = 0;
+        DrawBoms(' ', XArray, YArray, PARTICLE_COUNT);
 
-END:
+        // 座標を更新
+        for (uint32_t idx=0; idx<PARTICLE_COUNT; idx++)
+        {
+            XArray[idx] += DxArray[idx];
+            YArray[idx] += DyArray[idx];
+        }
+    }
+
     // 後処理
-    if(bomArray != NULL) BomArray_Delete(bomArray);
-    if(drawObject != NULL) DrawObject_Delete(drawObject);
-    return result;
+    return 0;
 }
 
 //-----------------------------------------------------------------------------
 //! @brief   Bom配列の全要素を描画または消去する
-//! @details 描画または消去に失敗した場合はfalseを返す
+//! @details 無し
+//! @return  無し
+//!
+void DrawBoms(
+    uint8_t ch,                         //!< [I]描画するキャラクタ
+    double xArray[],                    //!< [I]X座標の配列
+    double yArray[],                    //!< [I]Y座標の配列
+    uint32_t count)                     //!< [I]配列数
+{
+    // 指定された座標に1文字描画する
+    for (uint32_t idx = 0; idx < count; idx++)
+    {
+        int32_t x = (int32_t)lround(xArray[idx]);
+        int32_t y = (int32_t)lround(yArray[idx]);
+        PutChar(x, y, ch);
+    }
+}
+
+//-----------------------------------------------------------------------------
+//! @brief   指定位置に1文字描画する
+//! @details 表示領域外の座標は描画しない
 //! @return  成功時true
 //!
-bool DrawBoms(
-    DrawObject* drawObject,
-    const BomArray* bomArray,
-    uint8_t ch)
+bool PutChar(
+    int32_t x,                          //!< [I]キャラクタを描画するX座標
+    int32_t y,                          //!< [I]キャラクタを描画するY座標
+    uint8_t ch)                         //!< [I]描画するキャラクタ
 {
-    for (uint32_t idx = 0; idx < bomArray->count; idx++)
+    // 表示領域外の座標は描画しない
+    if (x < Info.srWindow.Left ||
+        x > Info.srWindow.Right ||
+        y < Info.srWindow.Top ||
+        y > Info.srWindow.Bottom)
     {
-        int32_t x = (int32_t)lround(bomArray->Boms[idx].x);
-        int32_t y = (int32_t)lround(bomArray->Boms[idx].y);
-        if (!DrawObject_PutChar(drawObject, x, y, ch))
-        {
-            return false;
-        }
+        return true;
     }
 
-    return true;
+    // 文字を描画する位置にカーソルを移動する
+    COORD position = { (SHORT)x, (SHORT)y };
+    SetConsoleCursorPosition(Output, position);
+
+    // カーソルの位置に1文字描画する
+    DWORD written = 0;
+    return WriteConsoleA(Output, &ch, 1, &written, NULL) && (written == 1);
 }
